@@ -1,5 +1,8 @@
 import { 
-  IonContent, IonFab, IonFabButton, IonHeader, 
+  IonContent, 
+  IonFab, 
+  IonFabButton, 
+  IonHeader, 
   IonIcon, 
   IonImg, 
   IonItem, 
@@ -19,7 +22,7 @@ import { firestore } from '../firebase';
 import { Entry, toEntry } from '../models';
 
 
-import './Home.css';
+//import './Home.css';
 
 const Home: React.FC = () => {
   const { userId } = useAuth();

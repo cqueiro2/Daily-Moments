@@ -6,6 +6,7 @@ export interface Entry {
     pictureUrl: string;
 }
 
-export function toEntry(doc: firebase.default.firestore.DocumentSnapshot): Entry {
+export function toEntry(doc: firebase.default.firestore.
+    DocumentSnapshot): Entry {
     return { id: doc.id, ...doc.data() } as Entry;
 }

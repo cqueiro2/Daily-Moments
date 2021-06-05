@@ -21,7 +21,7 @@ const App: React.FC = () => {
   return (
     <>
     <IonApp>
-      <AuthContext.Provider value={{loggedIn:false}}>
+    <AuthContext.Provider value={auth? auth : { loggedIn: false}}>
         <IonReactRouter>
           <Switch>
             <Route exact path="/login">
